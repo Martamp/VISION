@@ -1,0 +1,121 @@
+body {
+  font-family: $title;
+  letter-spacing: 5px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.main {
+  &__container {
+    margin-left: 20px;
+  }
+  &__article {
+    width: 100%;
+    // height: 220px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    padding-bottom: 13px;
+    // transition: 10s ease-in;
+  }
+  &__article:last-child {
+    margin-right: 10px;
+  }
+  &__article::-webkit-scrollbar {
+    height: 7px;
+  }
+  &__article:hover::-webkit-scrollbar-thumb {
+    transition: 10s ease-in;
+    background: linear-gradient(to left, rgb(44, 44, 44), rgb(20, 20, 20));
+    border-radius: 6px;
+  }
+  &__artist {
+    &--head {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &--container {
+      height: 200px;
+      min-width: 130px;
+      margin-right: 20px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      filter: grayscale(100%);
+      background-image: url(https://aws.traveler.es/prod/designs/v1/assets/2000x1331/163536.jpg);
+      object-fit: cover;
+      background-position: center;
+      background-position: center;
+      transition: 0.5s ease-in-out;
+    }
+    &--container:hover {
+      filter: grayscale(0%);
+      box-shadow: 5px 5px 10px rgb(196, 203, 209);
+      transform: scale(1.005);
+    }
+    &--author {
+      display: inline-block;
+      margin: 0px;
+
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+    }
+    &--title {
+      display: inline-block;
+    }
+    &--icon {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      color: white;
+      align-self: center;
+      padding: 6px;
+      padding-right: 2px;
+      font-size: 12px;
+      background-color: rgb(20, 20, 20);
+      border-radius: 50px;
+    }
+  }
+  &__movement {
+    &--container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      height: 60px;
+      min-width: 200px;
+      background-color: rgb(44, 44, 44);
+      border-radius: 30px;
+      margin-right: 10px;
+    }
+    &--text {
+      display: inline-block;
+      color: white;
+      margin: 0;
+    }
+  }
+}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+@media all and (min-width: 768px) {
+  .main {
+    &__artist--container {
+      min-width: 170px;
+      height: 250px;
+    }
+    &__artist--icon {
+      font-size: 15px;
+    }
+  }
+}

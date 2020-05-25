@@ -1,0 +1,78 @@
+.article {
+  &__background {
+    background-color: red;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -3;
+    height: 100%;
+    width: 100%;
+    background: url('https://aws.traveler.es/prod/designs/v1/assets/2000x1331/163536.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  &__info {
+    position: absolute;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px 25px 0px 0px;
+    padding: 10px 40px 10px 40px;
+    text-align: center;
+  }
+  &__title {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  &__subtitle {
+    display: block;
+    margin: 10px;
+    text-align: center;
+    margin-top: 0px;
+    color: rgb(41, 41, 41);
+    font-family: $text;
+    font-style: italic;
+    font-size: 16px;
+    letter-spacing: 0px;
+  }
+  &__text {
+    font-family: $text;
+    text-align: justify;
+    text-justify: inter-word;
+    text-transform: none;
+    font-size: 16px;
+    letter-spacing: 0px;
+    margin-top: 10px;
+    line-height: 20px;
+  }
+  &__tag {
+    display: inline-block;
+    padding: 5px 15px;
+    color: white;
+    background-color: rgb(44, 44, 44);
+    border-radius: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-family: $text;
+    text-transform: none;
+    letter-spacing: 0px;
+    font-style: italic;
+    &--cont {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+  &__icon {
+    transform: rotate(90deg);
+    font-size: 10px;
+    font-weight: 600;
+    position: relative;
+    top: 6px;
+    color: rgb(40, 40, 40);
+  }
+}

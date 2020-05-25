@@ -1,0 +1,94 @@
+.category {
+  &__article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    // flex-direction: column;
+  }
+  &__container {
+    height: 200px;
+    // margin-right: 20px;
+    // margin-bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(100%);
+    background-image: url(https://aws.traveler.es/prod/designs/v1/assets/2000x1331/163536.jpg);
+    object-fit: cover;
+    background-position: center;
+    background-position: center;
+    transition: 0.5s ease-in-out;
+  }
+  &__container:hover {
+    filter: grayscale(0%);
+    box-shadow: 5px 5px 10px rgb(196, 203, 209);
+    transform: scale(1.005);
+  }
+  &__author {
+    display: inline-block;
+    margin: 0px;
+    font-size: 25px;
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 55px;
+    z-index: 2;
+    transition: 0.5s ease-in-out;
+  }
+  &__text {
+    transition: ease-in-out 0.5s;
+    display: inline-block;
+    color: transparent;
+    font-family: $text;
+    text-transform: none;
+    letter-spacing: 0;
+    width: 280px;
+    text-align: justify;
+    white-space: wrap;
+    line-height: 18px;
+    font-style: italic;
+    position: relative;
+    top: 80px;
+    z-index: 1;
+  }
+}
+.category__container:hover .title {
+  display: inline-block;
+  position: absolute;
+  top: 40px;
+}
+.category__container:hover .text {
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  color: white;
+}
+.main__movement--container:hover {
+  transition: 0.7s ease-in-out;
+  background-color: white;
+  box-sizing: content-box;
+  box-shadow: inset 0 0 0 4px #2c2c2c;
+}
+.main__movement--container:hover .text {
+  transition: 0.7s ease-in-out;
+  color: #2c2c2c;
+}
+
+@media all and (min-width: 768px) {
+  .category {
+    &__container {
+      max-width: 100vw;
+    }
+    &__article {
+      grid-template-columns: 1fr 1fr;
+    }
+    &__text {
+      width: 70%;
+    }
+  }
+}
