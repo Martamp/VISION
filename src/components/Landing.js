@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link, Route, Switch } from 'react-router-dom';
 import '../stylesheets/index.scss';
-import App from '../components/App';
 import loader from '../images/logo-loader.png';
 import logo from '../images/black-logo.png';
 

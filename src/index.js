@@ -10,11 +10,11 @@ import Article from './components/Article';
 ReactDOM.render(
   <HashRouter>
     <Switch>
-      <Route exact path="/" component={Article} />
-      {/* <Route exact path="/" component={Landing} /> */}
-      {/* <Route path="/home" component={App} />
+      <Route exact path="/" component={Landing} />
+      <Route path="/home" component={App} />
       <Route path="/artists" component={CategoryList} />
-      <Route path="/item" component={CategoryList} /> */}
+      <Route path="/item" component={CategoryList} />
+      <Route exact path="/detail" component={Article} />
     </Switch>
   </HashRouter>,
   document.getElementById('root')

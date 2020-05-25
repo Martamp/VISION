@@ -9,7 +9,7 @@ function Article() {
     <div className="App">
       <header className="header__container">
         <div>
-          <Link to="/asdasd">
+          <Link to="/home">
             <div className="header__btn--menu"></div>
           </Link>
           <Link to="/asdasd">
