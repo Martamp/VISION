@@ -1,6 +1,11 @@
+.main__container--article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 .article {
   &__background {
-    background-color: red;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -10,9 +15,37 @@
     background: url('https://aws.traveler.es/prod/designs/v1/assets/2000x1331/163536.jpg') no-repeat center;
     background-size: cover;
   }
-
-  &__info {
+  &__discover {
+    box-sizing: content-box !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(40, 40, 40, 0.753);
+    height: 85px;
     position: absolute;
+    bottom: 300px;
+    border-radius: 20px;
+    margin: 0px;
+    padding: 10px 0px 10px 0px;
+    // padding: 10px;
+    &--img {
+      display: inline-block;
+      flex-direction: row;
+      width: 80px;
+      height: 80px;
+      margin-right: 10px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    &--img:first-child {
+      margin-left: 10px;
+    }
+    &--img img {
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+  &__info {
     position: absolute;
     left: 0px;
     bottom: 0px;
@@ -74,5 +107,42 @@
     position: relative;
     top: 6px;
     color: rgb(40, 40, 40);
+  }
+}
+@media all and (min-width: 768px) {
+  .article {
+    &__info {
+      position: absolute;
+      z-index: 1;
+      width: 45%;
+      right: 0px;
+      left: auto;
+      top: 0px;
+      background-color: rgb(255, 255, 255);
+      margin: 20px;
+      border-radius: 25px 25px 25px 25px;
+      padding: 10px 40px 10px 40px;
+    }
+    &__icon {
+      display: none;
+    }
+    &__discover {
+      height: 450px;
+      margin: 0px;
+      padding: 10px 0px 10px 0px;
+      bottom: 0px;
+      border-radius: 20px;
+      flex-direction: column;
+      position: absolute;
+      left: 32%;
+      top: 20px;
+      &--img {
+        flex-direction: column;
+        margin: 10px 10px 0px 10px;
+      }
+      &--img:first-child {
+        margin-top: 0px;
+      }
+    }
   }
 }

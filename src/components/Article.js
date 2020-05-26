@@ -17,8 +17,9 @@ function Article() {
           </Link>
         </div>
       </header>
-      <main className="main__container">
+      <section className="main__container--article">
         <div className="article__background">{/* <img src="https://aws.traveler.es/prod/designs/v1/assets/2000x1331/163536.jpg" title="Artist" alt="Artist" /> */}</div>
+
         <div className="article__info">
           <i class="far fa-circle article__icon"></i>
           <i class="far fa-circle article__icon"></i>
@@ -32,7 +33,27 @@ function Article() {
             <span className="article__tag">Tag</span>
           </div>
         </div>
-      </main>
+        <ul className="article__discover">
+          <li className="article__discover--img">
+            <img src="https://peristilo.files.wordpress.com/2009/07/a98-la-alegria-de-vivir-1905-06-matisse.jpeg" title="Artist" alt="Artist" />
+          </li>
+          <li className="article__discover--img">
+            <img src="https://www.analisidellopera.it/wp-content/uploads/2018/02/andre_derain_ponte_charing_cross.jpg" title="Artist" alt="Artist" />
+          </li>
+          <li className="article__discover--img">
+            <img src="https://peristilo.files.wordpress.com/2009/07/a98-la-alegria-de-vivir-1905-06-matisse.jpeg" title="Artist" alt="Artist" />
+          </li>
+          <li className="article__discover--img">
+            <img src="https://www.analisidellopera.it/wp-content/uploads/2018/02/andre_derain_ponte_charing_cross.jpg" title="Artist" alt="Artist" />
+          </li>
+          <li className="article__discover--img">
+            <img src="https://www.analisidellopera.it/wp-content/uploads/2018/02/andre_derain_ponte_charing_cross.jpg" title="Artist" alt="Artist" />
+          </li>
+          {/* <li className="article__discover--img">
+            <img src="https://upload.wikimedia.org/wikipedia/en/2/21/SeineChatou.jpg" title="Artist" alt="Artist" />
+          </li> */}
+        </ul>
+      </section>
     </div>
   );
 }
